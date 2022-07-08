@@ -1,16 +1,11 @@
 import React from 'react'
+import "./header.css";
+
 
 function Header() {
   return (
-    <div style={{
-        display:'flex',
-        alignItems:'cemter',
-        justifyContent:'center',
-        padding:'10px',
-        marginTop:'1.4em',
-        fontWeight:'650',
-        fontSize:'1.4rem'
-    }}>Let's Play Tac-Tac-Toe 👍</div>
+    <div className="header"
+    >Let's Play Tac-Tac-Toe 👍</div>
   )
 }
 

@@ -1,0 +1,10 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: '1.4em';
+    font-weight: bold;
+    font-size: '1.4rem'
+}
