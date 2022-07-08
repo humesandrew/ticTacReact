@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 // import axios from 'axios'
 import "./table.css";   
 
@@ -7,10 +7,12 @@ import "./table.css";
 function Table () {
     return(
     <div>
-    
+   
+
 <table>
         <tbody>
         <tr>
+         
             <td onClick={() =>{
              
             }}> X </td>
