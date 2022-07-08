@@ -1,16 +1,30 @@
 import React from 'react'
 // import axios from 'axios'
+import "./ai.css";
 
 function AI(){
 return(
-     <div style={{
+     <div className="ai">
+        <p>The area</p>
+          <div style={{
         display:'flex',
-        flexDirection:'column',        
         alignItems:'center',
-        justifyContent:'center'
+        flexDirection:'row',
+        flexWrap:'wrap',
+        justifyContent:'center',
+        marginTop:'-16px'
     }}>
-<p>The area</p>
+      {/* {* Reset button *} */}
+      <button 
+        style={{
+            color:'red'
+        }}>Reset</button>
+
     </div>
+
+
+    </div>
+    
 )
 }
 
