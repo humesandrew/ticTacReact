@@ -23,7 +23,10 @@ function Table() {
 
 
   function handleEvent(e){
-    setboard(prevstate => ({...prevstate, [e]: 'O'}))
+    setboard(prevstate => ({...prevstate, [e]: 'O'}));
+    if (board[e] === 'O') {
+      setboard(prevstate => ({...prevstate, [e]: 'X'}))
+    }
 }
 
 
@@ -35,8 +38,12 @@ function Table() {
           <td onClick={() =>{
                 handleEvent(0);
             }}> {board['0']} </td>
-            <td onClick={() => {}}> B </td>
-            <td onClick={() => {}}> C </td>
+             <td onClick={() =>{
+                handleEvent(1);
+            }}> {board['1']} </td>
+            <td onClick={() =>{
+                handleEvent(2);
+            }}> {board['2']} </td>
           </tr>
           <tr>
             <td onClick={() => {}}> 1 </td>
