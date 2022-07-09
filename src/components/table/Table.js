@@ -1,36 +1,51 @@
-
-import React, {useState} from 'react';
+import React from "react";
+// import useState from "react";
 // import axios from 'axios'
-import "./table.css";   
+import "./table.css";
 
 
-function Table () {
-    return(
+
+
+
+
+function Table() {
+
+
+  const [board, setboard] = React.useState({
+    '0': '-',
+    '1': '-',
+    '2': '-',
+    '3': '-',
+    '4': '-',
+    '5': '-',
+    '6': '-',
+  });
+
+
+  function handleEvent(e){
+    setboard(prevstate => ({...prevstate, [e]: 'O'}))
+}
+
+
+  return (
     <div>
-   
-
-<table>
+      <table>
         <tbody>
-        <tr>
-         
-            <td onClick={() =>{
-             
-            }}> X </td>
-            <td onClick={() =>{
-             
-            }}> A </td>
-            <td onClick={() =>{
-             
-            }}> 2 </td>
-        </tr>
-        <tr>
-            <td onClick={() =>{
-            
-            }}> b </td>
-        
-         </tr>
+          <tr>
+          <td onClick={() =>{
+                handleEvent(0);
+            }}> {board['0']} </td>
+            <td onClick={() => {}}> B </td>
+            <td onClick={() => {}}> C </td>
+          </tr>
+          <tr>
+            <td onClick={() => {}}> 1 </td>
+            <td onClick={() => {}}> 2 </td>
+            <td onClick={() => {}}> 3 </td>
+          </tr>
         </tbody>
-    </table>
+      </table>
     </div>
-       ) }
-export default Table
+  );
+}
+export default Table;
