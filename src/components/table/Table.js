@@ -21,22 +21,52 @@ function Table() {
     '6': '-',
   });
 
+  const [undo, setundo] = React.useState(null);
+
+  const [winner, setwinner] = React.useState('No winner');
+
+  const [turn, setturn] = React.useState('X');
+
 
   function handleEvent(e){
-    setboard(prevstate => ({...prevstate, [e]: 'O'}));
-    if (board[e] === 'O') {
-      setboard(prevstate => ({...prevstate, [e]: 'X'}))
+    if (board[e] === '-' && winner === 'No winner'){
+        setundo(e);
+        setboard(prevstate => ({...prevstate, [e]: 'X'}));
+        setturn(turn === "O" ? "X" : "O");
+
     }
 }
+
+React.useEffect(() =>{
+  if (board['0'] === board['1'] && board['1'] === board['2'] && board['2'] !== '-'){
+      setwinner(board['0']);
+      console.log(winner);
+     
+  }
+
+}, [board]);
+
+
+
+
+
+
+
 
 
   return (
     <div>
+        <div>{turn} turn!</div>
+
+<div>{ winner && winner !== 'No winner' ? (`${winner} won!`):'No one won!'}    
+</div>
       <table>
         <tbody>
           <tr>
           <td onClick={() =>{
                 handleEvent(0);
+              
+                console.log(turn)
             }}> {board['0']} </td>
              <td onClick={() =>{
                 handleEvent(1);
