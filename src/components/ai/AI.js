@@ -9,7 +9,7 @@ return(
 
     
      <div className="ai">
-        <p>The area</p>
+      
 
           <div 
     >
