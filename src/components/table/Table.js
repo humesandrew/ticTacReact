@@ -25,28 +25,42 @@ function Table() {
 
   const [winner, setwinner] = React.useState('No winner');
 
-  const [turn, setturn] = React.useState('');
+  const [turn, setturn] = React.useState('X');
 
 
   function handleEvent(e){
-    if (board[e] === '-'){
+    if (board[e] === '-' && turn==="X"){
         setundo(e);
         setboard(prevstate => ({...prevstate, [e]: 'X'}));
       
         setturn(turn === "O" ? "X" : "O");
 
     } 
-    else if (board[e] !== '-' && turn === 'O') {
+
+    else if (board[e] === '-' && turn==="O") {
+
       setboard(prevstate => ({...prevstate, [e]: 'O'}));
       setturn(turn === "O" ? "X" : "O");
-      console.log('turn O');
-    }
+      
 
-    else if (turn === "X") {
-      setboard(prevstate => ({...prevstate, [e]: 'X'}));
-      setturn(turn === "O" ? "X" : "O");
-      console.log('turn X');
     }
+    // else if (board[e] !== '-' && turn === 'O') {
+    //   setboard(prevstate => ({...prevstate, [e]: 'O'}));
+    //   setturn(turn === "O" ? "X" : "O");
+    //   console.log('turn O');
+    // }
+
+    // else if (board[e] !== "X" && turn === 'O') {
+    //   setboard(prevstate => ({...prevstate, [e]: 'O'}));
+    //   setturn(turn === "O" ? "X" : "O");
+    //   console.log('turn O');
+    // }
+
+    // else if (board[e] !=="O" && turn === "X") {
+    //   setboard(prevstate => ({...prevstate, [e]: 'X'}));
+    //   setturn(turn === "O" ? "X" : "O");
+    //   console.log('turn X');
+    // }
 }
 
 React.useEffect(() =>{
