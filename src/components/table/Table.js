@@ -70,6 +70,35 @@ React.useEffect(() =>{
       setwinner(board['0']);
       // console.log(winner);
      
+  } 
+  else if (board['3'] === board['4'] && board['4'] === board['5'] && board['5'] !== '-'){
+    setwinner(board['3']);
+  }
+
+  else if (board['6'] === board['7'] && board['7'] === board['8'] && board['8'] !== '-'){
+    setwinner(board['6']);
+  }
+ 
+
+  else if (board['0'] === board['3'] && board['3'] === board['6'] && board['6'] !== '-'){
+    setwinner(board['0']);
+  }
+
+  else if (board['1'] === board['4'] && board['4'] === board['7'] && board['7'] !== '-'){
+    setwinner(board['1']);
+  }
+
+  else if (board['2'] === board['5'] && board['5'] === board['8'] && board['8'] !== '-'){
+    setwinner(board['2']);
+  }
+
+  else if (board['0'] === board['4'] && board['4'] === board['8'] && board['8'] !== '-'){
+    setwinner(board['0']);
+  }
+
+
+  else if (board['2'] === board['4'] && board['4'] === board['6'] && board['6'] !== '-'){
+    setwinner(board['2']);
   }
 
 }, [board]);
@@ -125,6 +154,7 @@ React.useEffect(() =>{
           </tr>
         </tbody>
       </table>
+     
     </div>
   );
 }
