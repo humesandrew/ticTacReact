@@ -19,6 +19,8 @@ function Table() {
     '4': '-',
     '5': '-',
     '6': '-',
+    '7': '-',
+    '8': '-',
   });
 
   const [undo, setundo] = React.useState(null);
@@ -100,9 +102,26 @@ React.useEffect(() =>{
             }}> {board['2']} </td>
           </tr>
           <tr>
-            <td onClick={() => {}}> 1 </td>
-            <td onClick={() => {}}> 2 </td>
-            <td onClick={() => {}}> 3 </td>
+            <td onClick={() => {
+              handleEvent(3);
+            }}> {board['3']} </td>
+            <td onClick={() => {
+              handleEvent(4);
+            }}> {board['4']} </td>
+            <td onClick={() => {
+              handleEvent('5');
+            }}> {board['5']} </td>
+          </tr>
+          <tr>
+            <td onClick={() => {
+              handleEvent(6);
+            }}> {board['6']} </td>
+            <td onClick={() => {
+              handleEvent('7');
+            }}> {board['7']} </td>
+            <td onClick={() => {
+              handleEvent(8);
+            }}> {board['8']} </td>
           </tr>
         </tbody>
       </table>
