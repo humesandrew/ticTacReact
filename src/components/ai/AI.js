@@ -5,9 +5,14 @@ import "./ai.css";
 
 
 function AI(){
+
+
+
+
+
+  
 return(
 
-    
      <div className="ai">
       
 
@@ -21,6 +26,7 @@ return(
       <button 
         style={{
             color:'red'
+            
         }}>Reset</button>
 
     </div>
