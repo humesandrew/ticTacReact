@@ -113,10 +113,7 @@ React.useEffect(() =>{
 
   return (
     <div>
-        <div>{turn} turn!</div>
-
-<div>{ winner && winner !== 'No winner' ? (`${winner} won!`):'No one won!'}    
-</div>
+       
       <table>
         <tbody>
           <tr>
@@ -154,8 +151,14 @@ React.useEffect(() =>{
           </tr>
         </tbody>
       </table>
-     
-    </div>
+
+
+      <div className="tableFooter">{turn}'s turn!</div>
+
+<div className="winnerFooter">{ winner && winner !== 'No winner' ? (`JER SUCKS AT GAMES`):'No one won!'}    
+</div>
+</div>
+    
   );
 }
 export default Table;
