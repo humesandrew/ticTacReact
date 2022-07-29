@@ -19,3 +19,35 @@ td:hover{
         padding: 25px;
     }
 }
+
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: '1.4em';
+    font-weight: bold;
+ font-size: 30px;
+ border-color: white;
+}
+
+.tableFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: '1.4em';
+    font-weight: bold;
+ font-size: 50px;
+}
+
+.winnerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: '1.4em';
+    font-weight: bold;
+ font-size: 50px;
+}

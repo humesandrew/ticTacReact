@@ -5,7 +5,7 @@ import "./header.css";
 function Header() {
   return (
     <div className="header"
-    >Let's Play Tac-Tac-Toe 👍</div>
+    > 👍 Let's Play Tac-Tac-Toe 👍</div>
   )
 }
 
