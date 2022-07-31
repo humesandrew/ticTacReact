@@ -65,6 +65,17 @@ function Table() {
     // }
 }
 
+
+// make undo btn//////////
+
+// const [reset, setReset] = useState(false)
+// const resetBoard = () => {
+//   setReset(true);
+// }
+
+
+
+// setting win conditions////////
 React.useEffect(() =>{
   if (board['0'] === board['1'] && board['1'] === board['2'] && board['2'] !== '-'){
       setwinner(board['0']);
@@ -153,9 +164,11 @@ React.useEffect(() =>{
       </table>
 
 
+<button className='undoBtn'> Reset </button>
+
       <div className="tableFooter">{turn}'s turn!</div>
 
-<div className="winnerFooter">{ winner && winner !== 'No winner' ? (`JER SUCKS AT GAMES`):'No one won!'}    
+<div className="winnerFooter">{ winner && winner !== 'No winner' ? (`JAKE SUCKS AT GAMES`):'No one won!'}    
 </div>
 </div>
     
