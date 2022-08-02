@@ -164,7 +164,22 @@ React.useEffect(() =>{
       </table>
 
 
-<button className='undoBtn'> Reset </button>
+      <button 
+        onClick={() =>{
+            setwinner('No winner');
+            setboard({
+                '0': '-',
+                '1': '-',
+                '2': '-',
+                '3': '-',
+                '4': '-',
+                '5': '-',
+                '6': '-',
+                '7': '-',
+                '8': '-'
+            });
+            setundo(null);
+        }}>Reset</button>
 
       <div className="tableFooter">{turn}'s turn!</div>
 
