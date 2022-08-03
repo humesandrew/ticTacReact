@@ -123,7 +123,7 @@ React.useEffect(() =>{
 
 
   return (
-    <div>
+    <div className='main'>
        
       <table>
         <tbody>
@@ -164,7 +164,7 @@ React.useEffect(() =>{
       </table>
 
 
-      <button 
+      <button className='resetBtn'
         onClick={() =>{
             setwinner('No winner');
             setboard({
@@ -183,7 +183,7 @@ React.useEffect(() =>{
 
       <div className="tableFooter">{turn}'s turn!</div>
 
-<div className="winnerFooter">{ winner && winner !== 'No winner' ? (`JAKE SUCKS AT GAMES`):'No one won!'}    
+<div className="winnerFooter">{ winner && winner !== 'No winner' ? (`${winner} won`):'No one won!'}    
 </div>
 </div>
     
