@@ -31,6 +31,21 @@ table {
  font-size: 30px;
  border-color: white;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+
+.resetBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 25%;
+}
 
 .tableFooter {
     display: flex;
@@ -49,5 +64,5 @@ table {
     padding: 10px;
     margin-top: '1.4em';
     font-weight: bold;
- font-size: 50px;
+ font-size: 30px;
 }
