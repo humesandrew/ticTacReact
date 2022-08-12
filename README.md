@@ -1,4 +1,4 @@
-# React Portfolio
+# Tic-Tac-React 
 
   ![GitHub License](https://img.shields.io/badge/license-humesandrew-blue.svg)
   ## Description
