@@ -30,5 +30,7 @@
   [Click for Github repository](https://github.com/humesandrew/ticTacReact)
 
   [Click for GitHub Profile.](https://github.com/humesandrew)
+  
+  [Click to email.](mailto:humes.andrew@gmail.com)
 
 
