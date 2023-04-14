@@ -5,7 +5,7 @@ import ParticlesBg from 'particles-bg';
 import Table from './components/table/Table';
 
 import App from './App';
-
+/// uploading to render.com now 4/13/23 ////
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
