@@ -15,13 +15,14 @@
     This application is fully deployed on Heroku. See below for link. If you would like to clone this repository and run it locally, you will need to install Node and create a React application. 
   
   ## Usage
+  ![Screenshot](/public/tictacreactfull.png?raw=true "Screenshot")
     Click in the boxes to place your particular piece. Click reset if the game ends in a stalemate. 
 
   ## License
     This project is licensed under humesandrew. 
 
   ## Contributing
-    This project was made by Andy Humes. 
+    This project was made by Andy Humes using React.js. I used React-Particles for the background. 
 
   ## Questions
 
