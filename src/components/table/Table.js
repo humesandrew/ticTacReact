@@ -24,7 +24,7 @@ function Table() {
   });
 
   const [undo, setundo] = React.useState(null);
-
+  console.log(undo);
   const [winner, setwinner] = React.useState('No winner');
 
   const [turn, setturn] = React.useState('X');
@@ -33,6 +33,7 @@ function Table() {
   function handleEvent(e){
     if (board[e] === '-' && turn==="X"){
         setundo(e);
+       
         setboard(prevstate => ({...prevstate, [e]: 'X'}));
       
         setturn(turn === "O" ? "X" : "O");
